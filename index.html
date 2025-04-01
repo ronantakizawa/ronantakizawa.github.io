@@ -3,11 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NAME's Portfolio</title>
+    <title>CCTiger's Portfolio</title>
     <!-- External Library for Styling (Don't touch) -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
+<style>
+    #about, #skills, #projects {
+        text-align: center;
+        padding: 50px 0;
+    }
+    body{
+        background-color: #f4f4f4;
+        color: #333;
+    }
+
+    .card{
+        max-width: 250px;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rbga(0,0,0,0.1);
+    }
+
+    #skills .row, #projects .row {
+        align-items: flex-start;
+        justify-content: center;
+        gap: 20px;
+    }
+    .profilepic {
+        width: 250px;
+    }
+
+</style>
 <body>
-    <p>Hello World!</p>
+    <section id="about">
+    <div class="container">
+        <h1> CCTiger's Portfolio</h1>
+        <img class="profilepic" src="profilepic.png">
+        <br></br>
+        <p>I am a passionate software engineer with a love for building on the web.</p>
+    </div>
+    </section>
+
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="row">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Python</h5>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Java</h5>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">SQL</h5>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="row">
+                <div class="card">
+                    <img class="card-img-top" src="project1.png">
+                    <div class="class-body">
+                        <h5 class="card-title">Project 1</h5>
+                        <p class="card-text">Description</p>
+                        <a href="https://youtube.com" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="project1.png">
+                    <div class="class-body">
+                        <h5 class="card-title">Project 2</h5>
+                        <p class="card-text">Description</p>
+                        <a href="https://youtube.com" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
 </body>
 </html>
